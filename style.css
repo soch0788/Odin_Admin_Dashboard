@@ -1,0 +1,71 @@
+.container {
+    display: grid;
+    grid-template-columns: 1fr 6fr;
+    grid-template-rows: 1fr 6fr;
+}
+
+.header {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: 1fr 2fr;
+    grid-column: 2 / span 1;
+    /* border: green solid; */
+}
+
+.searchbar {
+    margin-top: 20px;
+    height: 20px;   
+}
+.account {
+    /* border: blue solid; */
+}
+
+.account-bar {
+    grid-column: 1 / span 2;
+    display: grid;
+    grid-template-columns: 1fr 5fr 1fr 1fr 1fr;
+    /* border: red solid; */
+}
+
+.sidebar {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 3fr repeat(10,1fr) 15fr ;
+    grid-column: 1;
+    grid-row: 1 / span 2;
+    background-color: rgb(49, 101, 180);
+    color: white;
+    
+}
+
+.main {
+    display: grid;
+    grid-template-columns: 3fr 3fr 2fr;
+    grid-template-rows: 1fr repeat(3, 4fr);
+    gap: 10px;
+    margin: 10px;
+    background-color: rgb(227, 241, 241);
+}
+
+.rightbar {
+    display: grid;
+    grid-row: 2 / span 3;
+    grid-column: 3;
+    /* border: red solid; */
+}
+
+.projectHead {
+    grid-column: 1 / span 2;
+}
+
+.announceHead {
+    grid-column: 3;
+}
+
+.card {
+    /* border: black solid; */
+    border-left: yellow solid;
+    background-color: white;
+    height: 200px;
+}
+
